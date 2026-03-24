@@ -10,7 +10,11 @@ This repository contains the initial narrative-scripting-tool for unity that was
   I designed with modularity and usability in mind to support rapid iteration and experimentation.
 - **optimization for linear games with little to none branching**   
   I designed the tool table based instead of node based.
-  
+
+## Documentation
+   - [Documentation](https://github.com/jcaonr/VINNIE-Protoyp-MVP)
+
+
 ## Git Strategy 
 
 - **Branching Model**
