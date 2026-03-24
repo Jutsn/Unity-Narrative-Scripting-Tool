@@ -1,0 +1,355 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7822691120735614595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8753806877093537502}
+  - component: {fileID: 1140593264096765072}
+  - component: {fileID: -8559667583887055198}
+  - component: {fileID: 6819533709507737403}
+  - component: {fileID: -2251334709758189662}
+  - component: {fileID: 5876512352289304911}
+  - component: {fileID: 926945255085592680}
+  - component: {fileID: 6899659298033408270}
+  - component: {fileID: 3324298545281791854}
+  m_Layer: 0
+  m_Name: Dialog Kinderzimmer 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8753806877093537502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1140593264096765072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ddf033becd2fc648a341e836f1bd9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ShowDialogScript
+--- !u!114 &-8559667583887055198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b062873b8e7cd04e8d8acd7bf2a2ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionDialog
+  backGround: 0
+  jumpToAction: 0
+  nextAction: {fileID: 0}
+  dialogList:
+  - speaker: Vinnie
+    text: "Ob ich das schaffe? Da k\xF6nnte sonst was dahinter sein."
+    speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 1
+    animation2Speed: 1
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  - speaker: Vinnie
+    text: Huch ... wer bist du denn?
+    speakerImage: {fileID: 0}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: Vinnie
+    object2ToAnimate: PC
+    trigger: Turn
+    trigger2: OutOfIntro
+    animationSpeed: 1
+    animation2Speed: 1
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  - speaker: Vinnie
+    text: Nun ... Also ... Ich bin Vinnie. Freut mich dich kennen zu lernen.
+    speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: Vinnie
+    object2ToAnimate: 
+    trigger: Wink
+    trigger2: 
+    animationSpeed: 1
+    animation2Speed: 1
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+--- !u!114 &6819533709507737403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4008aa5465f7b24599ea96b75e12dfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionQuestionWithInput
+  backGround: 0
+  dialogList:
+  - speaker: Vinnie
+    text: " Wie hei\xDFt du?"
+    speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 0
+    animation2Speed: 0
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  variableToSaveTo: _playerName
+  showAreYouSurePopUp: 0
+  popUpText: _playerName?
+  jumpToAction: 0
+  nextAction: {fileID: 0}
+--- !u!114 &-2251334709758189662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b062873b8e7cd04e8d8acd7bf2a2ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionDialog
+  backGround: 0
+  jumpToAction: 0
+  nextAction: {fileID: 0}
+  dialogList:
+  - speaker: Vinnie
+    text: "Sch\xF6n, dass du da bist _playerName."
+    speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 1
+    animation2Speed: 1
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  - speaker: Vinnie
+    text: Ich werde aber jetzt gleich aufbrechen. Und zwar auf ein Abenteuer - glaube
+      ich.
+    speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 1
+    animation2Speed: 1
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  - speaker: Vinnie
+    text: "Siehst du diese T\xFCr?"
+    speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: Vinnie
+    object2ToAnimate: 
+    trigger: Show
+    trigger2: 
+    animationSpeed: 1
+    animation2Speed: 1
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  - speaker: Vinnie
+    text: "Die habe ich gestern entdeckt. Die ist doch viel zu klein f\xFCr eine
+      normale T\xFCr. Die wollte bestimmt jemand verstecken."
+    speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 1
+    animation2Speed: 1
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  - speaker: Vinnie
+    text: "Ich werde gleich versuchen sie zu \xF6ffnen, und dann suche ich den Schatz
+      auf der anderen Seite."
+    speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 1
+    animation2Speed: 1
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+--- !u!114 &5876512352289304911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9c151f0b570fa4c9d87245f23b4e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionBranchDialog
+  backGround: 0
+  dialogList:
+  - speaker: Vinnie
+    text: "M\xF6chtest du mich begleiten? Ich mein ich habe keine Angst oder so,
+      das auf keinen Fall. Aber zu zweit ist es doch lustiger und ich bin doch etwas
+      aufgeregt."
+    speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 1
+    animation2Speed: 1
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  optionA: {fileID: 926945255085592680}
+  optionB: {fileID: 6899659298033408270}
+  buttonTextA: Ja
+  buttonTextB: Nein
+--- !u!114 &926945255085592680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b062873b8e7cd04e8d8acd7bf2a2ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionDialog
+  backGround: 0
+  jumpToAction: 1
+  nextAction: {fileID: 3324298545281791854}
+  dialogList:
+  - speaker: Vinnie
+    text: Gut. Auf gehts.
+    speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
+    backgroundImage: {fileID: 1095873603935541822, guid: 8d043bce877d8db48b54e016bc2f6d86, type: 3}
+    objectToAnimate: Vinnie
+    object2ToAnimate: 
+    trigger: Back
+    trigger2: 
+    animationSpeed: 1
+    animation2Speed: 0.5
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  - speaker: Vinnie
+    text: "Hier ist noch eine T\xFCr."
+    speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 0
+    animation2Speed: 0.5
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+--- !u!114 &6899659298033408270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b062873b8e7cd04e8d8acd7bf2a2ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionDialog
+  backGround: 0
+  jumpToAction: 0
+  nextAction: {fileID: 0}
+  dialogList:
+  - speaker: Vinnie
+    text: "Das verstehe ich. Dann gehe ich alleine. Ich komme dann wieder zur\xFCck
+      und erz\xE4hle dir was ich gefunden habe."
+    speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 0
+    animation2Speed: 0.5
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  - speaker: Vinnie
+    text: Bis gleich.
+    speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
+    backgroundImage: {fileID: 1095873603935541822, guid: 8d043bce877d8db48b54e016bc2f6d86, type: 3}
+    objectToAnimate: Vinnie
+    object2ToAnimate: 
+    trigger: Back
+    trigger2: 
+    animationSpeed: 1
+    animation2Speed: 0.5
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  - speaker: Vinnie
+    text: "Weit bin ich nicht gekommen. Hier ist noch eine T\xFCr!"
+    speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 0
+    animation2Speed: 0.5
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+--- !u!114 &3324298545281791854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d70bf35b9c5214e8ab45f5d812e2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionSceneLoad
+  backGround: 0
+  specificSceneToLoad: 2
+  justLoadNextScene: 0

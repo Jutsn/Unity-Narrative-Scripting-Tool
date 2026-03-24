@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7822691120735614595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8753806877093537502}
+  - component: {fileID: 1140593264096765072}
+  - component: {fileID: 6568650477374974200}
+  - component: {fileID: 6689958814652920983}
+  - component: {fileID: 2453301338327494937}
+  - component: {fileID: 3691400488717518482}
+  m_Layer: 0
+  m_Name: Dialog Atemuebung Phase 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8753806877093537502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1140593264096765072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ddf033becd2fc648a341e836f1bd9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ShowDialogScript
+--- !u!114 &6568650477374974200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9c151f0b570fa4c9d87245f23b4e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionBranchDialog
+  backGround: 0
+  dialogList:
+  - speaker: Vinnie
+    text: Sehr gut! Willst du es nochmal probieren?
+    speakerImage: {fileID: 0}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 1
+    animation2Speed: 1
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  optionA: {fileID: 6689958814652920983}
+  optionB: {fileID: 3691400488717518482}
+  buttonTextA: Ja
+  buttonTextB: Nein
+--- !u!114 &6689958814652920983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5388469517b3d7bb8ce85b72b76bc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionEvent
+  backGround: 1
+  verweis: "Atem\xFCbung 3 starten erneut"
+  unityEventIndex: 4
+--- !u!114 &2453301338327494937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ec9f0d2f6ee624ba5c31e70c6b9267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionEndDialog
+  backGround: 0
+--- !u!114 &3691400488717518482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b062873b8e7cd04e8d8acd7bf2a2ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionDialog
+  backGround: 2
+  jumpToAction: 0
+  nextAction: {fileID: 0}
+  dialogList:
+  - speaker: Vinnie
+    text: Dann haben wir es fast geschafft.
+    speakerImage: {fileID: 0}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 0
+    animation2Speed: 0
+    clip: {fileID: 0}
+    clip2: {fileID: 0}

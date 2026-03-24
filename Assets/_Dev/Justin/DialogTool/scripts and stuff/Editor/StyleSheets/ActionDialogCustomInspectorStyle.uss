@@ -1,0 +1,77 @@
+:root {
+}
+
+.section {
+    margin-top: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    margin-left: 6px;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    border-left-width: 0;
+    border-right-width: 0;
+    flex-direction: column;
+}
+
+.table-row {
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom-width: 0;
+    border-left-color: rgb(46, 44, 44);
+    border-right-color: rgb(46, 44, 44);
+    border-top-color: rgb(46, 44, 44);
+    border-bottom-color: rgb(46, 44, 44);
+    padding-top: 0;
+    padding-right: 4px;
+    padding-bottom: 0;
+    padding-left: 4px;
+}
+
+.groupBoxHeader {
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.ObjectFields {
+}
+
+.propertyfields {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row-action {
+    background-color: rgba(224, 20, 20, 0.67);
+}
+
+.row-normal {
+    background-color: var(--unity);
+}
+
+.backGroundA {
+    background-color: rgb(39, 79, 87);
+}
+
+.backGroundB {
+    background-color: rgb(44, 44, 152);
+}
+
+.backGroundC {
+    background-color: rgba(158, 164, 33, 0.67);
+}

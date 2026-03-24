@@ -1,0 +1,295 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7822691120735614595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8753806877093537502}
+  - component: {fileID: 1140593264096765072}
+  - component: {fileID: -7072775147696894965}
+  - component: {fileID: 7292762077060328789}
+  - component: {fileID: 3764652652418012273}
+  - component: {fileID: -8890869614931275558}
+  - component: {fileID: 7868871378115489452}
+  - component: {fileID: 2317583636419724286}
+  - component: {fileID: 7578479245296035819}
+  - component: {fileID: -6063785953569938497}
+  - component: {fileID: 2998158145211129506}
+  m_Layer: 0
+  m_Name: Dialog Atemuebung Phase 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8753806877093537502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1140593264096765072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ddf033becd2fc648a341e836f1bd9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ShowDialogScript
+--- !u!114 &-7072775147696894965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9c151f0b570fa4c9d87245f23b4e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionBranchDialog
+  backGround: 0
+  dialogList:
+  - speaker: Vinnie
+    text: "F\xFChlst du dich bereit f\xFCr die n\xE4chste \xDCbung? "
+    speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 1
+    animation2Speed: 1
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  optionA: {fileID: -8890869614931275558}
+  optionB: {fileID: 7292762077060328789}
+  buttonTextA: Ja
+  buttonTextB: Nein
+--- !u!114 &7292762077060328789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5388469517b3d7bb8ce85b72b76bc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionEvent
+  backGround: 2
+  verweis: "Start Atem\xFCbung 2"
+  unityEventIndex: 3
+--- !u!114 &3764652652418012273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ec9f0d2f6ee624ba5c31e70c6b9267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionEndDialog
+  backGround: 0
+--- !u!114 &-8890869614931275558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5388469517b3d7bb8ce85b72b76bc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionEvent
+  backGround: 1
+  verweis: Quadrat erscheinen lassen
+  unityEventIndex: 1
+--- !u!114 &7868871378115489452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b062873b8e7cd04e8d8acd7bf2a2ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionDialog
+  backGround: 0
+  jumpToAction: 0
+  nextAction: {fileID: 0}
+  dialogList:
+  - speaker: Vinnie
+    text: "Gut dann schlie\xDF jetzt mal die Augen und versuch dir das Quadrat hier
+      vor deinem inneren Auge vorzustellen."
+    speakerImage: {fileID: 0}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 0
+    animation2Speed: 0
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  - speaker: Vinnie
+    text: "Lass dir ruhig Zeit bis du es klar vor dir siehst. Wenn du bereit bist,
+      \xF6ffne die Augen wieder und dr\xFCck **Weiter**."
+    speakerImage: {fileID: 0}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 0
+    animation2Speed: 0
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+--- !u!114 &2317583636419724286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5388469517b3d7bb8ce85b72b76bc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionEvent
+  backGround: 0
+  verweis: Quadrat verschwinden lassen
+  unityEventIndex: 2
+--- !u!114 &7578479245296035819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b062873b8e7cd04e8d8acd7bf2a2ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionDialog
+  backGround: 0
+  jumpToAction: 0
+  nextAction: {fileID: 0}
+  dialogList:
+  - speaker: Vinnie
+    text: Huch! Jetzt ist es weg.
+    speakerImage: {fileID: 0}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 0
+    animation2Speed: 0
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  - speaker: Vinnie
+    text: "Aber keine Sorge. Du hast ja gerade ge\xFCbt es dir vorzustellen."
+    speakerImage: {fileID: 0}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 0
+    animation2Speed: 0
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  - speaker: Vinnie
+    text: Und da du mir vorhin geholfen hast, werde ich dir jetzt immer aller 2,5
+      Sekunden ein Zeichen geben.
+    speakerImage: {fileID: 0}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 0
+    animation2Speed: 0
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  - speaker: Vinnie
+    text: "H\xF6r genau hin und versuch synchron zu dem Ton des Spielzeugs zu atmen."
+    speakerImage: {fileID: 0}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 0
+    animation2Speed: 0
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+--- !u!114 &-6063785953569938497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9c151f0b570fa4c9d87245f23b4e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionBranchDialog
+  backGround: 0
+  dialogList:
+  - speaker: Vinnie
+    text: Bist du bereit oder willst du nochmal das Quadrat sehen?
+    speakerImage: {fileID: 0}
+    backgroundImage: {fileID: 0}
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
+    animationSpeed: 1
+    animation2Speed: 1
+    clip: {fileID: 0}
+    clip2: {fileID: 0}
+  optionA: {fileID: -8890869614931275558}
+  optionB: {fileID: 2998158145211129506}
+  buttonTextA: Nochmal das Quadrat bitte
+  buttonTextB: Bereit
+--- !u!114 &2998158145211129506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822691120735614595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5388469517b3d7bb8ce85b72b76bc38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionEvent
+  backGround: 2
+  verweis: "Atem\xFCbung3 starten"
+  unityEventIndex: 4

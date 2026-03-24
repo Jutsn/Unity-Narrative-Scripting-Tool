@@ -1,0 +1,67 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/_Dev/Justin/DialogTool/scripts%20and%20stuff/Editor/StyleSheets/ActionDialogCustomInspectorStyle.uss?fileID=7433441132597879392&amp;guid=92a3b66331625924e8bb4b30a8cfa0e1&amp;type=3#ActionDialogCustomInspectorStyle" />
+    <ui:VisualElement name="pane" class="section1 section" style="flex-grow: 1; padding-right: 6px; padding-left: 6px; padding-top: 6px; margin-top: 6px; margin-right: 6px; margin-bottom: 6px; margin-left: 6px; padding-bottom: 6px;">
+        <ui:TabView style="flex-direction: column; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+            <ui:Tab label="Dialog" name="Tab1" class="section" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                <ui:VisualElement name="table" class="section" style="flex-grow: 1; flex-basis: auto; width: auto; height: auto; border-left-width: 0; flex-shrink: 0; margin-top: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+                    <ui:MultiColumnListView binding-path="dialogList" reorderable="true" show-foldout-header="false" show-add-remove-footer="false" show-bound-collection-size="false" name="MultiColumnListView1" allow-add="false" allow-remove="false" show-border="true" class="row-normal row-action" style="background-color: rgb(65, 65, 65);">
+                        <ui:Columns>
+                            <ui:Column width="16%" stretchable="true" title="Speaker" binding-path="speaker" />
+                            <ui:Column title="Text" width="65%" binding-path="text" stretchable="true" />
+                            <ui:Column title="Image" binding-path="speakerImage" width="15%" min-width="15px" stretchable="true" />
+                            <ui:Column width="4%" name="color" visible="true" />
+                        </ui:Columns>
+                    </ui:MultiColumnListView>
+                </ui:VisualElement>
+            </ui:Tab>
+            <ui:Tab label="Actions 1" name="Tab2" class="section" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+                <ui:VisualElement name="table" class="section" style="flex-grow: 1; flex-basis: auto; width: auto; height: auto; border-left-width: 0; flex-shrink: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                    <ui:MultiColumnListView show-border="true" binding-path="dialogList" reorderable="true" horizontal-scrolling="false" show-foldout-header="false" show-add-remove-footer="false" show-bound-collection-size="false" name="MultiColumnListView" allow-add="false" allow-remove="false" class="row-normal">
+                        <ui:Columns>
+                            <ui:Column width="25%" stretchable="true" title="Object to Animate" binding-path="objectToAnimate" />
+                            <ui:Column title="Trigger" width="25%" binding-path="trigger" stretchable="false" />
+                            <ui:Column title="Animation Speed" binding-path="animationSpeed" width="20%" min-width="15px" stretchable="true" />
+                            <ui:Column binding-path="clip" title="SFX" width="25%" />
+                        </ui:Columns>
+                    </ui:MultiColumnListView>
+                </ui:VisualElement>
+            </ui:Tab>
+            <ui:Tab label="Actions 2" name="Tab3" closeable="false" class="section" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                <ui:VisualElement name="table" class="section" style="flex-grow: 1; flex-basis: auto; width: auto; height: auto; border-left-width: 0; flex-shrink: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                    <ui:MultiColumnListView show-border="true" binding-path="dialogList" reorderable="true" horizontal-scrolling="false" show-foldout-header="false" show-add-remove-footer="false" show-bound-collection-size="false" name="MultiColumnListView" allow-add="false" allow-remove="false" class="row-normal">
+                        <ui:Columns>
+                            <ui:Column width="25%" stretchable="true" title="Object 2 to Animate" binding-path="object2ToAnimate" />
+                            <ui:Column title="Trigger 2" width="25%" binding-path="trigger2" stretchable="false" />
+                            <ui:Column title="Animation Speed" binding-path="animation2Speed" width="20%" min-width="15px" stretchable="true" />
+                            <ui:Column binding-path="clip" title="SFX" width="25%" />
+                        </ui:Columns>
+                    </ui:MultiColumnListView>
+                </ui:VisualElement>
+            </ui:Tab>
+            <ui:Tab label="Background" name="Tab4" class="section" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                <ui:VisualElement name="table" class="section" style="flex-grow: 1; flex-basis: auto; width: auto; height: auto; border-left-width: 0; flex-shrink: 0; margin-top: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+                    <ui:MultiColumnListView show-border="true" binding-path="dialogList" reorderable="true" horizontal-scrolling="false" show-foldout-header="false" show-add-remove-footer="false" show-bound-collection-size="false" name="MultiColumnListView" allow-add="false" allow-remove="false" class="row-normal">
+                        <ui:Columns>
+                            <ui:Column title="Show Next Background" binding-path="backgroundImage" width="10%" min-width="15px" stretchable="true" />
+                        </ui:Columns>
+                    </ui:MultiColumnListView>
+                </ui:VisualElement>
+            </ui:Tab>
+        </ui:TabView>
+        <ui:VisualElement name="BoolContainerQuestion" style="flex-grow: 1; height: auto; margin-top: 12px;">
+            <ui:TextField label="variableToSaveTo" placeholder-text="variable" binding-path="variableToSaveTo" name="VariableField" />
+            <uie:PropertyField label="AreYouSurePopUp" binding-path="showAreYouSurePopUp" name="PopUpToggleBool" focusable="true" enabled="true" />
+            <ui:VisualElement name="PopUpElementsToHide" style="flex-grow: 1;">
+                <ui:TextField label="popUpText" placeholder-text="popUpText" binding-path="popUpText" name="PopupText" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="BoolContainer" style="flex-grow: 1; height: auto; margin-top: 12px;">
+            <uie:PropertyField label="jumpToAction (optional)" binding-path="jumpToAction" name="ToggleBool" focusable="true" />
+            <ui:VisualElement name="AllElementsToHide" style="flex-grow: 1;">
+                <ui:VisualElement name="nextActionBox" style="flex-grow: 1;">
+                    <uie:ObjectField label="nextAction" binding-path="nextAction" type="Justin.Action, Assembly-CSharp" name="nextActionField" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
