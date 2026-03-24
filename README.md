@@ -4,11 +4,13 @@
 
 This repository contains the initial narrative-scripting-tool for unity that was developed by me during the development of the **VINNIE** Prototype.
 
-## Objective
+## Objectives
 
-**modular and user-friendly systems**  
+- **modular and user-friendly systems**  
   I designed with modularity and usability in mind to support rapid iteration and experimentation.
-
+- **optimization for linear games with little to none branching**
+  I designed table-based instead of node-based
+  
 ## Git Strategy 
 
 - **Branching Model**
