@@ -83,10 +83,10 @@ MonoBehaviour:
     text: Huch ... wer bist du denn?
     speakerImage: {fileID: 0}
     backgroundImage: {fileID: 0}
-    objectToAnimate: Vinnie
-    object2ToAnimate: PC
-    trigger: Turn
-    trigger2: OutOfIntro
+    objectToAnimate: 
+    object2ToAnimate: 
+    trigger: 
+    trigger2: 
     animationSpeed: 1
     animation2Speed: 1
     clip: {fileID: 0}
@@ -95,9 +95,9 @@ MonoBehaviour:
     text: Nun ... Also ... Ich bin Vinnie. Freut mich dich kennen zu lernen.
     speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
     backgroundImage: {fileID: 0}
-    objectToAnimate: Vinnie
+    objectToAnimate: 
     object2ToAnimate: 
-    trigger: Wink
+    trigger: 
     trigger2: 
     animationSpeed: 1
     animation2Speed: 1
@@ -179,9 +179,9 @@ MonoBehaviour:
     text: "Siehst du diese T\xFCr?"
     speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
     backgroundImage: {fileID: 0}
-    objectToAnimate: Vinnie
+    objectToAnimate: 
     object2ToAnimate: 
-    trigger: Show
+    trigger: 
     trigger2: 
     animationSpeed: 1
     animation2Speed: 1
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b062873b8e7cd04e8d8acd7bf2a2ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionDialog
-  backGround: 0
+  backGround: 1
   jumpToAction: 1
   nextAction: {fileID: 3324298545281791854}
   dialogList:
@@ -265,9 +265,9 @@ MonoBehaviour:
     text: Gut. Auf gehts.
     speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
     backgroundImage: {fileID: 1095873603935541822, guid: 8d043bce877d8db48b54e016bc2f6d86, type: 3}
-    objectToAnimate: Vinnie
+    objectToAnimate: 
     object2ToAnimate: 
-    trigger: Back
+    trigger: 
     trigger2: 
     animationSpeed: 1
     animation2Speed: 0.5
@@ -297,7 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b062873b8e7cd04e8d8acd7bf2a2ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionDialog
-  backGround: 0
+  backGround: 2
   jumpToAction: 0
   nextAction: {fileID: 0}
   dialogList:
@@ -318,9 +318,9 @@ MonoBehaviour:
     text: Bis gleich.
     speakerImage: {fileID: 21300000, guid: da0f4ef2e2877f4459a26dc3c2d6ec88, type: 3}
     backgroundImage: {fileID: 1095873603935541822, guid: 8d043bce877d8db48b54e016bc2f6d86, type: 3}
-    objectToAnimate: Vinnie
+    objectToAnimate: 
     object2ToAnimate: 
-    trigger: Back
+    trigger: 
     trigger2: 
     animationSpeed: 1
     animation2Speed: 0.5
@@ -350,6 +350,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d70bf35b9c5214e8ab45f5d812e2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionSceneLoad
-  backGround: 0
+  backGround: 3
   specificSceneToLoad: 2
   justLoadNextScene: 0

@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 8753806877093537502}
   - component: {fileID: 1140593264096765072}
   - component: {fileID: -6805534112815749667}
-  - component: {fileID: -2739268940385238467}
-  - component: {fileID: -815673580675525501}
+  - component: {fileID: 83627091548607915}
   m_Layer: 0
   m_Name: Hello World Dialog
   m_TagString: Untagged
@@ -87,8 +86,8 @@ MonoBehaviour:
     animation2Speed: 1
     clip: {fileID: 0}
     clip2: {fileID: 0}
-  - speaker: 
-    text: 
+  - speaker: Ben
+    text: Let's continue with the second dialog.
     speakerImage: {fileID: 0}
     backgroundImage: {fileID: 0}
     objectToAnimate: 
@@ -99,7 +98,7 @@ MonoBehaviour:
     animation2Speed: 1
     clip: {fileID: 0}
     clip2: {fileID: 0}
---- !u!114 &-2739268940385238467
+--- !u!114 &83627091548607915
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,24 +107,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7822691120735614595}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 111dfbfdaf027b24b95ff258a31f1876, type: 3}
+  m_Script: {fileID: 11500000, guid: cafd4de0638b83e44a1f3d35cb8381a3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionChangeBackground
+  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionStartOtherDialog
   backGround: 0
-  backgroundToShow: {fileID: 0}
-  justShowNextBackground: 1
---- !u!114 &-815673580675525501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7822691120735614595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5388469517b3d7bb8ce85b72b76bc38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Justin.ActionEvent
-  backGround: 0
-  reference: 
-  unityEventIndex: 0
+  dialogIndex: 1
