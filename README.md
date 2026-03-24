@@ -8,7 +8,7 @@ This repository contains the initial narrative-scripting-tool for unity that was
 
 - **modular and user-friendly systems**  
   I designed with modularity and usability in mind to support rapid iteration and experimentation.
-- **optimization for linear games with little to none branching**
+- **optimization for linear games with little to none branching**   
   I designed table-based instead of node-based
   
 ## Git Strategy 
