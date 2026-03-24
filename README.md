@@ -12,7 +12,7 @@ This repository contains the initial narrative-scripting-tool for unity that was
   I designed the tool table based instead of node based.
 
 ## Documentation
-   - [Documentation](https://github.com/Jutsn/Unity-Narrative-Scripting-Tool/blob/main/Documentation/User-Doku.pdf)
+   - [User-Documentation](https://github.com/Jutsn/Unity-Narrative-Scripting-Tool/blob/main/Documentation/User-Doku.pdf)
 
 
 ## Git Strategy 
