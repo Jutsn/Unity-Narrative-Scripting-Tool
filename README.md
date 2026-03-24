@@ -12,7 +12,7 @@ This repository contains the initial narrative-scripting-tool for unity that was
   I designed the tool table based instead of node based.
 
 ## Documentation
-   - [Documentation]([https://github.com/jcaonr/VINNIE-Protoyp-MVP](https://github.com/Jutsn/Unity-Narrative-Scripting-Tool/blob/main/Documentation/User-Doku.pdf))
+   - [Documentation](https://github.com/Jutsn/Unity-Narrative-Scripting-Tool/blob/main/Documentation/User-Doku.pdf)
 
 
 ## Git Strategy 
